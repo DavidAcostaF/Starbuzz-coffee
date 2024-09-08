@@ -9,5 +9,6 @@ package condiments;
  * @author af_da
  */
 public interface ICondiment {
-    
+    public String getDescription();
+    public Float getCost();
 }

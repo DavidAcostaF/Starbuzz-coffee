@@ -8,6 +8,25 @@ package condiments;
  *
  * @author af_da
  */
-public class Milk {
+public class Milk implements ICondiment{
+
+    public String description;
+    public Float cost;
+
+    public Milk(String description, Float cost) {
+        this.description = description;
+        this.cost = cost;
+    }
+    
+   
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public Float getCost() {
+        return cost;
+    }
     
 }

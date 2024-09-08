@@ -10,7 +10,8 @@ package beverage;
  */
 abstract public class Beverage {
     public String description;
-
+    public Float cost;
+    
     public Beverage(String description) {
         this.description = description;
     }
@@ -21,6 +22,14 @@ abstract public class Beverage {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Float getCost() {
+        return cost;
+    }
+
+    public void setCost(Float cost) {
+        this.cost = cost;
     }
     
     
