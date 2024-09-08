@@ -9,15 +9,23 @@ package condiments;
  * @author af_da
  */
 public class Soy implements ICondiment {
+    public String description;
+    public Float cost;
 
+    public Soy(String description, Float cost) {
+        this.description = description;
+        this.cost = cost;
+    }
+    
+   
     @Override
     public String getDescription() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return description;
     }
 
     @Override
     public Float getCost() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return cost;
     }
     
 }
