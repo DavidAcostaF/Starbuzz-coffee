@@ -4,14 +4,16 @@
  */
 package beverage;
 
+import condiments.ICondiment;
+
 /**
  *
  * @author af_da
  */
 public class HouseBlend extends Beverage {
     
-    public HouseBlend(String description) {
-        super(description);
+    public HouseBlend(ICondiment condiment) {
+        super(condiment);
     }
     
 }

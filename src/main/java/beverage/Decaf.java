@@ -4,14 +4,16 @@
  */
 package beverage;
 
+import condiments.ICondiment;
+
 /**
  *
  * @author af_da
  */
 public class Decaf extends Beverage {
     
-    public Decaf(String description) {
-        super(description);
+    public Decaf(ICondiment condiment) {
+        super(condiment);
     }
     
 }

@@ -11,4 +11,6 @@ package condiments;
 public interface ICondiment {
     public String getDescription();
     public Float getCost();
+    public void setDescription(String description);
+    public void setCost(Float cost);
 }

@@ -4,14 +4,26 @@
  */
 package beverage;
 
+import condiments.ICondiment;
+
 /**
  *
  * @author af_da
  */
 public class DarkRoast extends Beverage {
     
-    public DarkRoast(String description) {
-        super(description);
+    public DarkRoast(ICondiment condiment) {
+        super(condiment);
+    }
+
+    @Override
+    public Float getCost() {
+        return super.getCost(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+
+    @Override
+    public String getDescription() {
+        return super.getDescription(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
     
 }

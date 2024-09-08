@@ -28,5 +28,13 @@ public class Chocolate implements ICondiment {
     public Float getCost() {
         return cost;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCost(Float cost) {
+        this.cost = cost;
+    }
     
 }

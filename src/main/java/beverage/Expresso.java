@@ -4,14 +4,16 @@
  */
 package beverage;
 
+import condiments.ICondiment;
+
 /**
  *
  * @author af_da
  */
 public class Expresso extends Beverage{
     
-    public Expresso(String description) {
-        super(description);
+    public Expresso(ICondiment condiment) {
+        super(condiment);
     }
     
 }

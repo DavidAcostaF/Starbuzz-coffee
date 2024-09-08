@@ -4,33 +4,33 @@
  */
 package beverage;
 
+import condiments.ICondiment;
+
 /**
  *
  * @author af_da
  */
-abstract public class Beverage {
+public class Beverage implements ICondiment{
     public String description;
     public Float cost;
+    public ICondiment wrappee;
     
-    public Beverage(String description) {
-        this.description = description;
+    public Beverage(ICondiment condiment) {
+        this.wrappee = condiment;
     }
 
-    public String getDescription() {
-        return description;
-    }
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getDescription(){
+        return wrappee.getDescription();
     }
-
     public Float getCost() {
-        return cost;
+        return wrappee.getCost();
     }
-
-    public void setCost(Float cost) {
-        this.cost = cost;
-    }
-    
-    
 }

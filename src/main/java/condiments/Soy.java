@@ -27,5 +27,14 @@ public class Soy implements ICondiment {
     public Float getCost() {
         return cost;
     }
+    @Override
+    public void setCost(Float cost) {
+        this.cost = cost;
+    }
+
+    @Override
+    public void setDescription(String description) {
+        this.description = description;
+    }
     
 }
