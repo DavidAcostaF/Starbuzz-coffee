@@ -4,13 +4,18 @@
  */
 package condiments;
 
+import beverage.Beverage;
+
 /**
  *
  * @author af_da
  */
-public interface ICondiment {
-    public String getDescription();
-    public Float getCost();
-    public void setDescription(String description);
-    public void setCost(Float cost);
+public abstract class Condiment extends Beverage {
+    protected Beverage beverage;
+
+    public Condiment(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    public abstract String getDescription();
 }

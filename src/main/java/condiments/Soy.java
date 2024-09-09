@@ -12,9 +12,9 @@ public class Soy implements ICondiment {
     public String description;
     public Float cost;
 
-    public Soy(String description, Float cost) {
-        this.description = description;
-        this.cost = cost;
+    public Soy() {
+        this.description = "Soy";
+        this.cost = 5.0f;
     }
     
    
@@ -26,15 +26,6 @@ public class Soy implements ICondiment {
     @Override
     public Float getCost() {
         return cost;
-    }
-    @Override
-    public void setCost(Float cost) {
-        this.cost = cost;
-    }
-
-    @Override
-    public void setDescription(String description) {
-        this.description = description;
     }
     
 }

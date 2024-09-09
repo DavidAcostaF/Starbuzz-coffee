@@ -4,16 +4,17 @@
  */
 package beverage;
 
-import condiments.ICondiment;
 
 /**
  *
  * @author af_da
  */
 public class HouseBlend extends Beverage {
-    
-    public HouseBlend(ICondiment condiment) {
-        super(condiment);
+    public HouseBlend() {
+        description = "House Blend Coffee";
     }
-    
+
+    public double getCost() {
+        return 40.00D;
+    }
 }

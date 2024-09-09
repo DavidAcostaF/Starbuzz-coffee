@@ -13,9 +13,9 @@ public class WhippedCream implements ICondiment {
     public String description;
     public Float cost;
 
-    public WhippedCream(String description, Float cost) {
-        this.description = description;
-        this.cost = cost;
+    public WhippedCream() {
+        this.description = "Whipped cream";
+        this.cost =11.2f;
     }
     
    
@@ -29,14 +29,5 @@ public class WhippedCream implements ICondiment {
         return cost;
     }
 
-    @Override
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    @Override
-    public void setCost(Float cost) {
-        this.cost = cost;
-    }
     
 }

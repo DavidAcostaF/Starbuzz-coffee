@@ -4,16 +4,18 @@
  */
 package beverage;
 
-import condiments.ICondiment;
+import condiments.Condiment;
 
 /**
  *
  * @author af_da
  */
 public class Decaf extends Beverage {
-    
-    public Decaf(ICondiment condiment) {
-        super(condiment);
+    public Decaf() {
+        description = "Decaf Coffee";
     }
-    
+
+    public double getCost() {
+        return 60.00D;
+    }
 }

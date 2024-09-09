@@ -13,9 +13,9 @@ public class Milk implements ICondiment{
     public String description;
     public Float cost;
 
-    public Milk(String description, Float cost) {
-        this.description = description;
-        this.cost = cost;
+    public Milk() {
+        this.description = "Milk";
+        this.cost = 15F;
     }
     
    
@@ -29,14 +29,5 @@ public class Milk implements ICondiment{
         return cost;
     }
 
-    @Override
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    @Override
-    public void setCost(Float cost) {
-        this.cost = cost;
-    }
     
 }

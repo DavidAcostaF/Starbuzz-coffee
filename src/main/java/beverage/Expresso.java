@@ -4,16 +4,18 @@
  */
 package beverage;
 
-import condiments.ICondiment;
 
 /**
  *
  * @author af_da
  */
-public class Expresso extends Beverage{
+public class Expresso extends Beverage {
     
-    public Expresso(ICondiment condiment) {
-        super(condiment);
+    public Expresso() {
+        description = "Espresso";
     }
-    
+
+    public double getCost() {
+        return 40.00D;
+    }
 }

@@ -13,9 +13,9 @@ public class Chocolate implements ICondiment {
     public String description;
     public Float cost;
 
-    public Chocolate(String description, Float cost) {
-        this.description = description;
-        this.cost = cost;
+    public Chocolate() {
+        this.description = "Chocolate";
+        this.cost = 6f;
     }
     
    
@@ -29,12 +29,6 @@ public class Chocolate implements ICondiment {
         return cost;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
-    public void setCost(Float cost) {
-        this.cost = cost;
-    }
     
 }
