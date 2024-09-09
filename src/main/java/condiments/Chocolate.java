@@ -4,31 +4,31 @@
  */
 package condiments;
 
+import beverage.Beverage;
+
 /**
  *
  * @author af_da
  */
-public class Chocolate implements ICondiment {
-
+public class Chocolate extends Condiment {
     public String description;
-    public Float cost;
-
-    public Chocolate() {
-        this.description = "Chocolate";
-        this.cost = 6f;
-    }
+    public double cost;
     
-   
+    public Chocolate(Beverage beverage) {
+       super(beverage);
+       description = ", Chocolate";
+       cost = 4.04D;
+    }
+
     @Override
     public String getDescription() {
-        return description;
+        return beverage.getDescription()+this.description;
     }
 
     @Override
-    public Float getCost() {
-        return cost;
+    public double getCost() {
+        return beverage.getCost()+this.cost;
     }
-
 
     
 }

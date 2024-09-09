@@ -4,28 +4,30 @@
  */
 package condiments;
 
+import beverage.Beverage;
+
 /**
  *
  * @author af_da
  */
-public class Soy implements ICondiment {
+public class Soy extends Condiment {
     public String description;
-    public Float cost;
-
-    public Soy() {
-        this.description = "Soy";
-        this.cost = 5.0f;
-    }
+    public double cost;
     
-   
+    public Soy(Beverage beverage) {
+       super(beverage);
+       description = ", Soy";
+       cost = 8.04D;
+    }
+
     @Override
     public String getDescription() {
-        return description;
+        return beverage.getDescription()+this.description;
     }
 
     @Override
-    public Float getCost() {
-        return cost;
+    public double getCost() {
+        return beverage.getCost()+this.cost;
     }
     
 }

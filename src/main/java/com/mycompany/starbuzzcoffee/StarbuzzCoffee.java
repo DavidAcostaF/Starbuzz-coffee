@@ -5,9 +5,8 @@
 package com.mycompany.starbuzzcoffee;
 
 import beverage.Beverage;
-import beverage.DarkRoast;
+import beverage.Expresso;
 import condiments.Chocolate;
-import condiments.Condiment;
 import condiments.Milk;
 
 /**
@@ -20,11 +19,10 @@ public class StarbuzzCoffee {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        Condiment chocolate = new Chocolate();
-//        Condiment milk = new Milk();
-//        Beverage beverage = new Beverage(chocolate);
-//        beverage = new DarkRoast(milk);
-//        System.out.println(beverage.getDescription());
+        Beverage beverage = new Expresso();
+        beverage = new Chocolate(beverage);
+        beverage = new Milk(beverage);
+        System.out.println(beverage.getDescription());
     }
     
 }

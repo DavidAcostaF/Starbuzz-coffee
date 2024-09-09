@@ -4,29 +4,31 @@
  */
 package condiments;
 
+import beverage.Beverage;
+
 /**
  *
  * @author af_da
  */
-public class WhippedCream implements ICondiment {
+public class WhippedCream extends Condiment {
 
     public String description;
-    public Float cost;
-
-    public WhippedCream() {
-        this.description = "Whipped cream";
-        this.cost =11.2f;
-    }
+    public double cost;
     
-   
+    public WhippedCream(Beverage beverage) {
+       super(beverage);
+       description = ", WhippedCream";
+       cost = 8.04D;
+    }
+
     @Override
     public String getDescription() {
-        return description;
+        return beverage.getDescription()+this.description;
     }
 
     @Override
-    public Float getCost() {
-        return cost;
+    public double getCost() {
+        return beverage.getCost()+this.cost;
     }
 
     

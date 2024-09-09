@@ -17,5 +17,6 @@ public abstract class Condiment extends Beverage {
         this.beverage = beverage;
     }
 
+    @Override
     public abstract String getDescription();
 }
