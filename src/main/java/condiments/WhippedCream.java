@@ -28,7 +28,7 @@ public class WhippedCream extends Condiment {
     public WhippedCream(Beverage beverage) {
        super(beverage);
        description = ", WhippedCream";
-       cost = 8.04D;
+       cost = 8.00D;
     }
 
     /**
