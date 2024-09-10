@@ -23,6 +23,7 @@ public class StarbuzzCoffee {
         beverage = new Chocolate(beverage);
         beverage = new Milk(beverage);
         System.out.println(beverage.getDescription());
+        System.out.println(beverage.getCost());
     }
     
 }
